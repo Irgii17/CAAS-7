@@ -37,12 +37,12 @@ fetch('https://sgp1.blynk.cloud/external/api/get?token=nFw3rEZTMcOCkMhm9JaARTVw-
     console.log(typeof(data));
     // Proses data yang diterima
     const temperature = data;
-    if (temperature == 0) {
-        console.log("temp=0");
-      var test = document.getElementById('target-element');
-      test.classList.toggle("style1");
-    } else {
-        document.getElementById('target-elemennt') = style2;
+    if (temperature == 1) {
+        console.log("1");
+        var test = document.getElementById('target-element');
+        test.classList.toggle("style1");
+      } else {
+        test.classList.remove("style1");
     }
   });
 
@@ -51,8 +51,9 @@ setInterval(() => {
       .then(response => response.json())
       .then(data => {
         // Proses data yang diterima
+     
       });
-  }, 5000);
+  }, 1000);
   
 
 //dumy
