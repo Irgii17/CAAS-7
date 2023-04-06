@@ -16,6 +16,12 @@ background: linear-gradient(90deg, #33c2d5 0%, #cf51da 100%);
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
+#logo {
+  filter: invert(100%) sepia(8%) saturate(5%) hue-rotate(284deg) brightness(110%) contrast(100%);
+  height: 2em;
+  margin-right: 0.2em;
+}
+
 .card-margin {
   margin-bottom: 1.875rem;
 }
