@@ -1,13 +1,3 @@
-function bookButton1() {
-    var element = document.getElementById("target-element1");
-    element.classList.toggle("style1");
-}
-function bookButton2() {
-    var element = document.getElementById("target-element2");
-    element.classList.toggle("style1");
-}
-
-// https://{server_address}/external/api/get?token={token}&{pin}
 
 const api_url = "https://sgp1.blynk.cloud/external/api/get?token=nFw3rEZTMcOCkMhm9JaARTVw-COByLHE&v0&v1&v2";
 // masukan 
