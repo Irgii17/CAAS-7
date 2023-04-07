@@ -26,8 +26,8 @@ fetch('https://sgp1.blynk.cloud/external/api/get?token=nFw3rEZTMcOCkMhm9JaARTVw-
   .then(data => {
     console.log(typeof(data));
     // Proses data yang diterima
-    const temperature = data;
-    if (temperature == 1) {
+    const v2 = data;
+    if (v2 == 1) {
         console.log("1");
         var test = document.getElementById('target-element');
         test.classList.toggle("style1");
@@ -41,7 +41,6 @@ setInterval(() => {
       .then(response => response.json())
       .then(data => {
         // Proses data yang diterima
-     
       });
   }, 1000);
   
@@ -69,5 +68,5 @@ function randomNumber(min, max) {
     }
     console.log(data)
     document.getElementById("dummytry").innerHTML = data.dummy
-  }, 15000 )
+  }, 15000 );
 
